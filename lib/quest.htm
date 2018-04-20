@@ -1,0 +1,11 @@
+
+<p><a href="#!" title="Quests" class="w3-btn w3-theme">&lt; Quests</a></p>
+
+<h1>{{ quest.title }}</h1>
+
+<p>{{ quest.content }}</p>
+
+<div class="w3-card w3-margin-bottom w3-padding" ng-repeat="stage in quest.stages">
+  <p><a ng-show="{{ stage.visible }}" href="#!{{ quest.id }}/{{ stage.id }}" title="{{ stage.title }}" class="w3-btn w3-theme w3-large">{{ stage.title }} <span class="fa fa-chevron-circle-right"></span></a></p>
+  <p ng-show="{{ !stage.visible }}"><span class="w3-btn w3-disabled w3-theme"> ??? </span></p>
+</div>

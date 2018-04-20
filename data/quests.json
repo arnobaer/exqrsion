@@ -1,0 +1,80 @@
+[
+  {
+    "id": "laubwald",
+    "lang": "de",
+    "title": "Laubwald",
+    "short": "Der Laubwald in Europa...",
+    "content": "Der Laubwald besteht aus blättertragenden Bäumen.",
+    "image": "laubwald_cc0.jpg",
+    "stages": [
+      {
+        "id": "buche",
+        "stage": "stage01",
+        "title": "Die Buche",
+        "content": "Die Rotbuche....",
+        "image": "rotbuchen_cc0.jpg"
+      },
+      {
+        "id": "linde",
+        "stage": "stage02",
+        "title": "Die Linde",
+        "content": "Die Linde...",
+        "image": "lindenleafs_cc0.jpg"
+      },
+      {
+        "id": "eiche",
+        "stage": "stage03",
+        "title": "Die Eiche",
+        "content": "Die Eiche als Baum und so...",
+        "image": "oaktree_cc0.jpg",
+        "quiz": {
+          "reward": 200,
+          "question": "Wie alt können Eichen werden?",
+          "answers": [
+            {
+              "label": "100 Jahre",
+              "valid": false
+            },
+            {
+              "label": "500 Jahre",
+              "valid": false
+            },
+            {
+              "label": "1000 Jahre",
+              "valid": true
+            }
+          ],
+          "solution": "Eichen können bis zu 1000 Jahre alt werden!"
+        }
+      }
+    ]
+  },
+  {
+    "id": "burgen",
+    "lang": "de",
+    "title": "Burgen",
+    "short": "Burgen in Europa...",
+    "content": "Was sind Burgen? ...",
+    "image": "rabenstein_cc0.jpg",
+    "stages": [
+      {
+        "id": "mauer",
+        "stage": "stage01",
+        "title": "Die Ringmauer",
+        "content": "Die Ringmauer..."
+      },
+      {
+        "id": "turm",
+        "stage": "stage03",
+        "title": "Der Turm",
+        "content": "Zeichen einer Burg ist der Turm. Nur der Herzog besitzt Burgen mit mehrerene Türmen..."
+      },
+      {
+        "id": "palas",
+        "stage": "stage02",
+        "title": "Das Palas",
+        "content": "Das Wort Palas kommt von Palast..."
+      }
+    ]
+  }
+]

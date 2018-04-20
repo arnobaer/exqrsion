@@ -1,0 +1,17 @@
+
+<p><a href="#!{{ quest.id }}" title="{{ quest.title }}" class="w3-btn w3-theme">&lt; {{ quest.title }}</a></p>
+
+<h1>{{ stage.title }}</h1>
+
+<p>{{ stage.content }}</p>
+
+<hr />
+
+<p>{{ stage.quiz.question }}</p>
+
+<p ng-repeat="answer in stage.quiz.answers">
+  <button class="w3-btn" ng-show="!stage.quiz.solved" ng-click="chooseAnswer(answer)">{{ answer.label }}</button>
+  <button class="w3-btn w3-{{ buttonColor(answer) }}" ng-show="stage.quiz.solved">{{ answer.label }}</button>
+</p>
+
+<p ng-show="stage.quiz.solved">{{ stage.quiz.solution }}</p>

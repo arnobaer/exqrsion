@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html data-ng-app="xqrApp" lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ExQRsion.app</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+</head>
+<body class="w3-theme-dark">
+
+  <!-- Header -->
+  <header class="w3-container w3-theme w3-padding" id="header">
+    <!--<i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>-->
+    <div class="w3-center">
+    <h4 id="header-secondary">Ein QR-Code Trail!</h4>
+    <h1 id="header-primary" class="w3-xxxlarge w3-animate-bottom">ExQRsion.app</h1>
+    <!--  <div class="w3-padding-32">
+        <button class="w3-btn w3-xlarge w3-theme-dark w3-hover-teal" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">QR-Code Trail</button>
+      </div>-->
+    </div>
+  </header>
+
+  <!-- main -->
+  <div class="w3-container w3-white w3-padding-32">
+    <div ng-view></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container">
+    <h3>ExQRsion</h3>
+    <p>Powered by AngularJS and <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+      <span class="w3-text w3-theme w3-padding">Go To Top</span>&nbsp;
+      <a class="w3-text-white" href="javascript:scroll(0,0)"><span class="w3-xlarge">
+      <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+    <p>Remember to check out our website&nbsp;&nbsp;<a href="burgried.at" class="w3-btn w3-theme" target="_blank">burgried.at</a></p>
+  </footer>
+
+  <script type="text/javascript" src="./lib/app.js"></script>
+
+</body>
+</html>
